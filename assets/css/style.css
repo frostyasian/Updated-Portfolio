@@ -15,9 +15,18 @@ body {
   color: #fff;
   line-height: 1.6;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/art.jpg");
+  background-size: cover;
 }
+/* #container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/art.jpg");
+  background-size: cover;
+} */
 #menu {
-  background-color: #2e9cca;
+  /* background-color: #2e9cca; */
+  background-color: #25274d;
   display: flex;
   justify-content: flex-end;
   display: inline-block;
@@ -125,21 +134,24 @@ body {
 /* footer */
 footer {
   width: 100%;
-  background-color: #2e9cca;
+  /* background-color: #2e9cca; */
+  background-color: #25274d;
   color: white;
   font-size: 10px;
   /* flex-shrink: 0; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   text-align: center;
   padding: 10px 20px;
   position: fixed;
   bottom: 0;
+  height: 30px;
 }
-footer p {
-  text-align: center;
+footer #taglines {
   margin: 2px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* About Me Section */
