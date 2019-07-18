@@ -78,7 +78,7 @@ body {
   margin-bottom: 150px;
 }
 #btn:hover {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
 }
 @keyframes btn {
   0% {
@@ -99,6 +99,7 @@ body {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #menu {
@@ -106,15 +107,20 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
-/* #logo {
-  padding: 10px;
-  font-size: 20px;
-  display: flex;
-  justify-content: flex-start;
-} */
 
 .nav {
   padding: 0 10px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky #content {
+  padding-top: 60px;
 }
 /* footer */
 footer {
@@ -188,5 +194,32 @@ footer p {
   margin-bottom: 350px;
 }
 
-#sectionTwo {
+#sectionTwo .info-container {
+  margin-top: 200px;
+}
+
+#sectionThree .info-container {
+  margin-top: 200px;
+}
+
+/* Scroll to Top Btn */
+
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #464866; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+}
+
+#topBtn: :hover {
+  background-color: #aaabb8; /* Add a dark-grey background on hover */
 }
